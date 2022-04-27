@@ -9,16 +9,16 @@ import javax.persistence.Id;
 public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
-    private long id;
+    private long user_id;
     private String name;
     private String email;
 
     public long getId() {
-        return id;
+        return user_id;
     }
 
     public void setId(long id) {
-        this.id = id;
+        this.user_id = id;
     }
 
     public String getName() {
@@ -40,7 +40,7 @@ public class Users {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
+                "id=" + user_id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 '}';
